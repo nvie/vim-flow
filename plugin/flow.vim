@@ -36,9 +36,9 @@ if !executable(g:flow#flowpath)
 endif
 
 " flow error format.
-let s:flow_errorformat = '%EFile "%f"\, line %l\, characters %c-%.%#,%Z%m,'
-" flow from editor.
-let s:flow_from = '--from vim'
+let s:flow_errorformat = '%EERROR:\ %f:%l,%Z'
+"let s:flow_from = '--from vim'
+let s:flow_from = ''
 
 
 " Call wrapper for flow.
